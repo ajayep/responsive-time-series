@@ -5,9 +5,9 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@nivo/line": "0.50.0",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
+    "@nivo/line": "0.59.3",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
     "react-scripts": "2.0.3"
   },
   "devDependencies": {},
@@ -17,10 +17,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }

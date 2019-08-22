@@ -16,8 +16,7 @@ const Line = () => (
     }}
     xScale={{
       type: "time",
-      format: "%Y-%m-%d",
-      precision: "day"
+      format: "%Y-%m-%d"
     }}
     xFormat="time:%Y-%m-%d"
     yScale={{
@@ -26,15 +25,23 @@ const Line = () => (
     }}
     axisLeft={{
       legend: "linear scale",
-      legendOffset: 12
+      legendOffset: -50
     }}
     axisBottom={{
       format: "%b %d",
-      tickValues: "every 2 days",
+      tickValues: "every month",
       legend: "time scale",
-      legendOffset: -12
+      legendOffset: 40
     }}
     curve="monotoneX"
+    markers={[
+      {
+        axis: "x",
+        value: data[0].data[7].x,
+        lineStyle: { stroke: "#babafe", strokeWidth: 5 },
+        legend: "x marker"
+      }
+    ]}
     enablePointLabel={true}
     pointSize={16}
     pointBorderWidth={1}
@@ -42,7 +49,6 @@ const Line = () => (
       from: "color",
       modifiers: [["darker", 0.3]]
     }}
-    useMesh={true}
     enableSlices={false}
     legends={[
       {
